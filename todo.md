@@ -3,11 +3,12 @@
 1. Merge into one script: cloning, etc.
 2. Flip script: perform all steps for one submission + repeat for all submissions.
 3. Command line arguments: 
-  1. Asst repo name.
-  2. Filename for file with Github acct id-s. _Note: All steps tied to Github acct id._
-  3. Filename for file with required files.
-  4. Build directory (to copy files, build, and run the asst code).
-  5. Filename for grading log file.
+  1. [optl] Asst name. _Default:_ `asst_yyyymmdd_hhmmss]`.
+  2. [reqd] Asst repo name.
+  3. [reqd] Filename for file with Github acct id-s **OR** a single id inline. _Note: All steps tied to Github acct id._
+  4. [reqd] Filename for file with required files.
+  5. [optl] Build directory (to copy files, build, and run the asst code).
+  6. [optl] Filename for grading log file. _Default:_ `asstname_grading.csv`.
 4. Steps:
   1. Open log file and add a new line with the Github acct id. _Note: Format {id, num_passed, num_total, msg} (e.g. `ivogeorg, 147, 204, "Err msg or comment"`)._
   2. Clone repository. _Errors: exact spelling; **master** branch; no tags._ 
@@ -20,4 +21,8 @@
     * If asst code ran, add number of passed and total tests, and empty message.
     * If some other error, enter 0 for passed tests, the number of total tests, and an error message.
 5. Repeat for all Github acct id-s in the input file.
+6. Environment assumptions:
+  1. Git repository directory `$HOME/git-repos/submit-py` is root for the application.
+  2. There is a Python virtual environment at `$HOME/PythonVirtualEnvs/submitpy`.
+  3. 
 
