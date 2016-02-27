@@ -24,7 +24,7 @@
 6. Environment assumptions:
   1. Git repository directory `$HOME/git-repos/submit-py` is root for the application.
   2. There is a Python virtual environment at `$HOME/PythonVirtualEnvs/submitpy`.
-  3. The config files with the Github acct id-s and required files are in the root directory.
+  3. The config files with the Github acct id-s and required files are in the `$SUBMITPY_ROOT/config`.
   4. A directory is created for the assignment `[asst-name]`.
   5. Subdirectories `build`, `repos`, `config`, and `log` are created in the asst dir.
   6. Config files are copied to `config`.
