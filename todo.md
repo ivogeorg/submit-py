@@ -1,8 +1,8 @@
 #### TODO
 
 1. Merge into one script: cloning, etc.
-2. Flip script: perform all steps for one submission.
-3. Input parameters: 
+2. Flip script: perform all steps for one submission + repeat for all submissions.
+3. Command line arguments: 
   1. Asst repo name.
   2. Filename for file with Github acct id-s. _Note: All steps tied to Github acct id._
   3. Filename for file with required files.
