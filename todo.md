@@ -19,4 +19,5 @@
   8. Complete the entry in the log file: 
     * If asst code ran, add number of passed and total tests, and empty message.
     * If some other error, enter 0 for passed tests, the number of total tests, and an error message.
+5. Repeat for all Github acct id-s in the input file.
 
