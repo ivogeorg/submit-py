@@ -1,4 +1,4 @@
-#### TODO
+#### Design
 
 1. Merge into one script: cloning, etc.
 2. Flip script: perform all steps for one submission + repeat for all submissions.
@@ -14,12 +14,12 @@
   2. Clone repository. _Errors: exact spelling; **master** branch; no tags._ 
   3. Check for required files. _Errors: exact spelling; missing files._
   4. Copy files to build directory. _Note: Always clean up old files._
-  5. Build with `cmake`. _Errors: missing files; compilation errors; linker errors._
-  6. Run and `grep` the _"Passed 56/56 tests."_ line.
-  7. Parse the numbers for the _passed_ and _total_ tests.
+  5. Build with `cmake`. _Errors: missing files; compilation errors; linker errors._ _Note: this can be arbitrarily sophisticated with CMake._
+  6. Run and `grep` the _"Passed 56/56 tests."_ line. _Errors: early termination (i.e. the program doesn't complete and the "Passed" line is not printed), in which case the number of "ok" lines have to counted._ _TODO: Can the `ErrorContext` be modified to be exception-safe (i.e. the destructor is called even upon early termination), or does this fall under the inevitable exceptions?_ 
+  7. Parse the numbers for the _passed_ and _total_ tests. Alternatively, count the "ok" lines.
   8. Complete the entry in the log file: 
     * If asst code ran, add number of passed and total tests, and empty message.
-    * If some other error, enter 0 for passed tests, the number of total tests, and an error message.
+    * If some other error, enter the "ok" count for passed tests, the number of total tests, and an error message.
 5. Repeat for all Github acct id-s in the input file.
 6. Environment assumptions:
   1. Git repository directory `$HOME/git-repos/submit-py` is root for the application.
@@ -30,4 +30,8 @@
   6. Config files are copied to `config`.
   7. Log file is created under `log`.
 
+#### Todo
 
+1. How is this a _submit_ script w/o a remote server? Currently, it is an autograde script only.
+2. What might the Github API be useful for?
+3. 
