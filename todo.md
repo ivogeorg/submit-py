@@ -35,3 +35,15 @@
 1. How is this a _submit_ script w/o a remote server? Currently, it is an autograde script only.
 2. What might the Github API be useful for?
 3. 
+
+#### Some fresh ideas
+
+1. Subcommands:
+
+  1. check - give remote feedback on tests passing, syntax check, style check
+  2. submit - record date, time and stats with authentication and feedback
+  3. grade - grade a roster or a single student, multiple assignments or one, depending on cmd line args
+  4. compare - check for possible plagiarism
+
+2. Local or server.
+3. 
