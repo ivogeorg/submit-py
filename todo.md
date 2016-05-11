@@ -58,4 +58,5 @@
 
 6. Encapsulate and abstract protocol for particular repository (fetch).
 
+7. Exception safety for tests.
 
