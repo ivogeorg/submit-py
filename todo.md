@@ -45,5 +45,17 @@
   3. grade - grade a roster or a single student, multiple assignments or one, depending on cmd line args
   4. compare - check for possible plagiarism
 
-2. Local or server.
-3. 
+2. Execution modes:
+
+  1. Local (check, grade, compare)
+  2. Server (all).
+
+3. Encapsulate and abstract interaction with shell (command & feedback/result/return codes).
+
+4. Modes of identification, isolation, security, and confidentiality (protect).
+
+5. Encapsulate and abstract build tool for particular programming language (lang).
+
+6. Encapsulate and abstract protocol for particular repository (fetch).
+
+
